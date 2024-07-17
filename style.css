@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+:root {
+  /* text */
+  --subHed-pale-violet: hsl(276, 100%, 81%);
+  --chatLeft-moderate-violet: hsl(276, 55%, 52%);
+  --chatRight-dark-violet: hsl(271, 15%, 43%);
+  --placeText-grayish-blue: hsl(206, 6%, 79%);
+  --mainHed-very-dark-violet: hsl(271, 36%, 24%);
+  --parag-dark-grayish-violet: hsl(270, 7%, 64%);
+
+  /* gradients */
+  --light-magenta: hsl(293, 100%, 63%);
+  --light-violet: hsl(264, 100%, 61%);
+
+  /* secondary */
+  --white: hsl(0, 0%, 100%);
+  --appBack-light-grayish-violet: hsl(270, 20%, 96%);
+  --subButt-very-dark-violet: hsl(271, 36%, 24%);
+  --radioButt-very-light-magenta: hsl(289, 100%, 72%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+}
