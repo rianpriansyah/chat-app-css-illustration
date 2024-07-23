@@ -29,4 +29,331 @@
 body {
   font-family: "Rubik", sans-serif;
   font-size: 16px;
+  background-color: var(--appBack-light-grayish-violet);
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.container .left-background {
+  align-self: start;
+  height: 85vh;
+  width: 1000px;
+  margin-left: -100px;
+  background: linear-gradient(180deg, var(--light-magenta) 0%, var(--light-violet) 100%);
+  border-radius: 0 0 300px 300px;
+}
+
+.container .right-background {
+  align-self: end;
+  height: 85vh;
+  width: 1000px;
+  background: linear-gradient(180deg, var(--light-violet) 0%, var(--light-magenta) 100%);
+  opacity: 0.1;
+  margin-right: -185px;
+  border-radius: 300px 300px 0 0;
+}
+
+.container .left-content {
+  width: 440px;
+  padding: 10px;
+  position: relative;
+  font-size: 7px;
+  background-color: var(--white);
+  border-radius: 30px;
+  overflow: hidden;
+  margin-left: -62px;
+}
+
+.container .left-content .white-background {
+  width: 115px;
+  height: 30px;
+  position: absolute;
+  background-color: var(--white);
+  top: -6px;
+  left: 61px;
+  border-radius: 10px;
+}
+
+.container .left-content .wrapper {
+  background-color: var(--appBack-light-grayish-violet);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.container .left-content .wrapper .header {
+  background: linear-gradient(to right, var(--light-violet), var(--light-magenta));
+  padding: 20px 12px 8px;
+}
+
+.container .left-content .wrapper .header .header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container .left-content .wrapper .header .header-content .title-content {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.container .left-content .wrapper .header .header-content .title-content > p {
+  color: var(--appBack-light-grayish-violet);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.container .left-content .wrapper .header .header-content .title-content img {
+  width: 22px;
+  border-radius: 50%;
+  border: 1px solid var(--white);
+}
+
+.container .left-content .wrapper .header-content .title-content .title p:first-of-type {
+  font-weight: 700;
+  font-size: 12px;
+  color: var(--appBack-light-grayish-violet);
+}
+
+.container .left-content .wrapper .header-content .title-content .title p:last-of-type {
+  font-size: 9px;
+  color: var(--subHed-pale-violet);
+}
+
+.container .left-content .wrapper .header .header-content .three-dots {
+  display: flex;
+}
+
+.container .left-content .wrapper .header .header-content .three-dots i {
+  color: var(--appBack-light-grayish-violet);
+  align-self: center;
+  font-size: 12px;
+}
+/* end */
+
+.container .left-content .wrapper .chat-content .left-chat .chat-1 {
+  background-color: hsla(276, 100%, 81%, 0.2);
+  color: var(--chatLeft-moderate-violet);
+  font-weight: 500;
+  padding: 8px;
+  width: 120px;
+  border-radius: 10px 10px 10px 1px;
+  margin: 10px 0 6px 8px;
+}
+
+.container .left-content .wrapper .chat-content .left-chat .chat-2 {
+  background-color: hsla(276, 100%, 81%, 0.2);
+  color: var(--chatLeft-moderate-violet);
+  font-weight: 500;
+  padding: 8px;
+  width: 120px;
+  border-radius: 10px 10px 10px 1px;
+  margin: 0 0 0 8px;
+}
+
+.container .left-content .wrapper .chat-content .right-chat {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  margin: 10px 8px 10px 0;
+}
+
+.container .left-content .wrapper .chat-content .right-chat .chat-3 {
+  display: flex;
+  gap: 6px;
+  margin: 0 0 6px 0;
+}
+
+.container .left-content .wrapper .chat-content .right-chat .chat-3 img {
+  border-radius: 8px;
+  width: 40px;
+}
+
+.container .left-content .wrapper .chat-content .right-chat .chat-4 {
+  background-color: var(--white);
+  color: var(--chatRight-dark-violet-moderate-violet);
+  font-weight: 500;
+  padding: 8px;
+  width: 127px;
+  border-radius: 10px 10px 1px 10px;
+  margin: 0 0 6px 0;
+}
+
+.container .left-content .wrapper .chat-content .right-chat .chat-5 {
+  background-color: var(--white);
+  color: var(--chatRight-dark-violet-moderate-violet);
+  font-weight: 500;
+  padding: 8px;
+  width: fit-content;
+  border-radius: 10px 10px 1px 10px;
+}
+
+.container .left-content .wrapper .chat-content .left-chat .chat-6 {
+  background-color: hsla(276, 100%, 81%, 0.2);
+  color: var(--chatLeft-moderate-violet);
+  font-weight: 500;
+  padding: 8px;
+  width: 120px;
+  border-radius: 10px 10px 10px 1px;
+  margin: 0 0 6px 8px;
+}
+
+.container .left-content .wrapper .chat-content .left-chat .chat-7 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 150px;
+  margin: 0 0 6px 8px;
+  padding: 10px 18px 10px 8px;
+  background: linear-gradient(to right, var(--light-magenta) 0%, var(--light-violet));
+  border-radius: 10px 10px 10px 1px;
+}
+
+.container .left-content .wrapper .chat-content .left-chat .chat-7 .title-circle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.container .left-content .wrapper .chat-content .left-chat .chat-7 .title-circle .circle {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid var(--radioButt-very-light-magenta);
+}
+
+.container .left-content .wrapper .chat-content .left-chat .chat-7 .title-circle p {
+  color: var(--subHed-pale-violet);
+  font-weight: 700;
+}
+
+.container .left-content .wrapper .chat-content .left-chat .chat-7 > p {
+  color: var(--appBack-light-grayish-violet);
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.container .left-content .wrapper .chat-content .left-chat .chat-8 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 150px;
+  margin: 0 0 0 8px;
+  padding: 10px 18px 10px 8px;
+  background: linear-gradient(to right, var(--light-magenta) 0%, var(--light-violet));
+  border-radius: 10px 10px 10px 1px;
+}
+
+.container .left-content .wrapper .chat-content .left-chat .chat-8 .title-circle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.container .left-content .wrapper .chat-content .left-chat .chat-8 .title-circle .circle {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid var(--radioButt-very-light-magenta);
+}
+
+.container .left-content .wrapper .chat-content .left-chat .chat-8 .title-circle p {
+  color: var(--subHed-pale-violet);
+  font-weight: 700;
+}
+
+.container .left-content .wrapper .chat-content .left-chat .chat-8 > p {
+  color: var(--appBack-light-grayish-violet);
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.container .left-content .wrapper .send-messages {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 6px 6px 16px;
+  margin: 10px 8px 8px 8px;
+  border-radius: 16px;
+  background-color: var(--white);
+}
+
+.container .left-content .wrapper .send-messages p:first-of-type {
+  color: var(--placeText-grayish-blue);
+  font-size: 9px;
+  font-weight: 700;
+}
+
+.container .left-content .wrapper .send-messages p:last-of-type {
+  border: 1px solid black;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 19px;
+  font-weight: 700;
+  font-size: 14px;
+  border-radius: 50%;
+  background-color: var(--subButt-very-dark-violet);
+  color: var(--appBack-light-grayish-violet);
+}
+/* end */
+
+.container .right-content {
+  width: 865px;
+  margin-left: 120px;
+  margin-right: -60px;
+}
+
+.container .right-content h2 {
+  color: var(--mainHed-very-dark-violet);
+  margin-bottom: 14px;
+  font-size: 35px;
+}
+
+.container .right-content p {
+  color: var(--parag-dark-grayish-violet);
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    overflow-y: auto;
+  }
+
+  .container {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .container .left-background {
+    height: 60vh;
+    width: 100vw;
+    margin-left: -50vw;
+  }
+
+  .container .right-background {
+    height: 60vh;
+    width: 100vw;
+    margin-right: -50vw;
+  }
+
+  .container .left-content {
+    width: 240px;
+    margin: 0 auto;
+    margin-top: -50vh;
+    z-index: 1;
+  }
+
+  /* end */
+
+  .container .right-content {
+    width: 85%;
+    text-align: center;
+    margin: 8vh auto -48vh;
+  }
 }
